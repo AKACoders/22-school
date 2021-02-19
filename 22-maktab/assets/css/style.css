@@ -4070,21 +4070,21 @@ hr {
     color: #FF6D21;
     left: 8px;
     font-weight: 600;
-    content: "\e61a";
+    /*content: "\e61a";*/
     font-family: 'themify';
-    background-image: none;
-    outline: 0;
-    transform: rotate(0deg)
+    /*background-image: none;*/
+    /*outline: 0;*/
+    /*transform: rotate(0deg)*/
 }
 
 .project-us .collapse-wrapper .accordion-header .accordion-button.collapsed {
-    border: 0
+    /*border: 0*/
 }
 
 .project-us .collapse-wrapper .accordion-header .accordion-button.collapsed::after {
-    content: "\e622";
-    font-weight: 800;
-    color: #FF6D21
+    /*content: "\e622";*/
+    /*font-weight: 800;*/
+    /*color: #FF6D21*/
 }
 
 .project-us .collapse-wrapper .accordion-collapse {
@@ -4092,8 +4092,8 @@ hr {
 }
 
 .project-us .collapse-wrapper .accordion-collapse .accordion-body {
-    background: #fff;
-    padding: 20px 38px
+    /*background: #fff;*/
+    /*padding: 20px 38px*/
 }
 
 .about-area {
