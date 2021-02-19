@@ -1,3 +1,6 @@
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 .gray-bg {
     background: #F8FAFC
@@ -107,7 +110,27 @@ h6 {
     font-weight: 500;
     text-transform: normal
 }
-
+nav ul li a{
+    transition: .3s;
+    position: relative;
+    text-align: center;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background: #fff;
+    clip-path: polygon(0 91%, 100% 91%, 93% 100%, 8% 100%);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+nav ul li a:hover::after{
+    transform: scaleX(1);
+    background: #FF6D21;
+}
 p {
     font-family: "DM Sans", sans-serif;
     color: #454E6D;
@@ -3085,28 +3108,28 @@ hr {
     transition: all .3s ease-out 0s;
     text-transform: normal;
     font-family: "DM Sans", sans-serif;
-    position: relative
+    position: relative;
 }
 
 .header-area .main-header .main-menu ul li a::after {
     content: "";
     position: absolute;
-    width: 0;
-    bottom: 18px;
+    /* width: 0; */
+    bottom: 20px;
     right: 5px;
     left: -5px;
-    height: 3px;
+    /* height: 3px; */
     z-index: 1;
-    -webkit-transition: all .4s ease-out 0s;
-    -moz-transition: all .4s ease-out 0s;
-    -ms-transition: all .4s ease-out 0s;
-    -o-transition: all .4s ease-out 0s;
-    transition: all .4s ease-out 0s;
-    background: #fff
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    /* background: #fff */
 }
 
 .header-area .main-header .main-menu ul li:hover>a {
-    color: #fff
+    color: #FF6D21
 }
 
 .header-area .main-header .main-menu ul li:hover>a::after {
