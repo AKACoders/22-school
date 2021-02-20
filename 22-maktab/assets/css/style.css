@@ -2564,26 +2564,32 @@ hr {
 }
 
 .header-btn2 {
-    padding: 29px 31px !important
+    padding: 29px 31px !important;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-btn2 {
-        padding: 27px 19px !important
+        padding: 27px 19px !important;
+        
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .header-btn2 {
         padding: 19px 18px !important;
-        font-size: 13px !important
+        font-size: 13px !important;
+        top: -63px;
+        left: -34px;
+        
     }
 }
 
 @media (max-width: 575px) {
     .header-btn2 {
-        padding: 19px 18px !important;
-        font-size: 13px !important
+        padding: 14px 6px !important;
+        font-size: 14px !important;
+        top: -57px;
+        left: -39px;
     }
 }
 
@@ -4097,21 +4103,21 @@ hr {
     color: #FF6D21;
     left: 8px;
     font-weight: 600;
-    content: "\e61a";
+    /*content: "\e61a";*/
     font-family: 'themify';
-    background-image: none;
-    outline: 0;
-    transform: rotate(0deg)
+    /*background-image: none;*/
+    /*outline: 0;*/
+    /*transform: rotate(0deg)*/
 }
 
 .project-us .collapse-wrapper .accordion-header .accordion-button.collapsed {
-    border: 0
+    /*border: 0*/
 }
 
 .project-us .collapse-wrapper .accordion-header .accordion-button.collapsed::after {
-    content: "\e622";
-    font-weight: 800;
-    color: #FF6D21
+    /*content: "\e622";*/
+    /*font-weight: 800;*/
+    /*color: #FF6D21*/
 }
 
 .project-us .collapse-wrapper .accordion-collapse {
@@ -4119,8 +4125,8 @@ hr {
 }
 
 .project-us .collapse-wrapper .accordion-collapse .accordion-body {
-    background: #fff;
-    padding: 20px 38px
+    /*background: #fff;*/
+    /*padding: 20px 38px*/
 }
 
 .about-area {
