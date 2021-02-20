@@ -3155,9 +3155,9 @@ hr {
 
 .header-area .main-header .main-menu ul ul.submenu {
     position: absolute;
-    width: 170px;
+    width: 196px;
     background: #FF6D21;
-    left: 0;
+    left: -47px;
     top: 90%;
     visibility: hidden;
     opacity: 0;
