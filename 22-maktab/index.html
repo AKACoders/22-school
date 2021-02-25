@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/icon/fontawesome-free-5.15.2-web/css/all.css">
     <link rel="stylesheet" href="assets/icon/fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -23,6 +22,12 @@
 </head>
 
 <body>
+
+    <div class="loader_bg">
+        <div class="loader"></div>
+
+    </div>
+
     <header>
         <div class="header-area header-transparent">
             <div class="main-header header-sticky">
@@ -30,7 +35,7 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <div class="left-content d-flex align-items-center">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo1.png" class="logo"></a>
+                                <a href="index.html"><img src="assets/img/logo/logo_victor.png" class="logo"></a>
 
                             </div>
 
@@ -480,6 +485,11 @@ our revenue by more.</a></h3>
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
 
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
