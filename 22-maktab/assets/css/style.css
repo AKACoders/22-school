@@ -6240,7 +6240,9 @@ hr {
 .contact-info .media-body p {
   color: #8a8a8a;
 }
-
+.map_wrapper{
+  border: 3px solid #3D4868;  
+}
 .contact-title {
   font-size: 27px;
   font-weight: 600;
@@ -6318,7 +6320,7 @@ hr {
 }
 
 .contact-section {
-  padding: 130px 0 100px;
+  padding: 50px 0 100px;
 }
 
 @media (max-width: 991px) {
