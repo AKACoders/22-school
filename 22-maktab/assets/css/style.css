@@ -3207,11 +3207,7 @@ hr {
   transition: all 0.3s ease-out 0s;
 }
 .header-area .main-header .main-menu ul li:nth-child(3) ul.submenu {
-  position: absolute;
-  width: 203px;
-  background: #ff6d21;
   left: -60px;
-  top: 90%;
 }
 .header-area .main-header .main-menu ul ul.submenu > li {
   margin-left: 7px;
