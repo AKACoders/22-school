@@ -2615,18 +2615,16 @@ hr {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .header-btn2 {
     padding: 19px 18px !important;
-    font-size: 13px !important;
-    top: -63px;
-    left: -34px;
+    font-size: 18px !important;
+    
   }
 }
 
 @media (max-width: 575px) {
   .header-btn2 {
-    padding: 14px 6px !important;
+    padding: 18px 10px !important;
     font-size: 14px !important;
-    top: -57px;
-    left: -39px;
+    top: -10px;;
   }
 }
 
@@ -3207,7 +3205,11 @@ hr {
   transition: all 0.3s ease-out 0s;
 }
 .header-area .main-header .main-menu ul li:nth-child(3) ul.submenu {
+  position: absolute;
+  width: 203px;
+  background: #ff6d21;
   left: -60px;
+  top: 90%;
 }
 .header-area .main-header .main-menu ul ul.submenu > li {
   margin-left: 7px;
@@ -4787,35 +4789,12 @@ hr {
 
 .footer-social a:hover {
   color: #fff;
+  background: #ff6d21;
 }
 
 .footer-social a i {
   display: inline-block;
 }
-
-.footer-social a:first-child:hover {
-  background: #4267b2;
-}
-
-.footer-social a:nth-child(2):hover {
-  background: #F70000;
-}
-
-.footer-social a:nth-child(3):hover {
-  background: #0077b5;
-}
-
-.footer-social a:last-child:hover {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-}
-
 
 .number a {
   font-family: "DM Sans", sans-serif;
@@ -7747,6 +7726,14 @@ del {
 .mylogo {
   font-family: monospace;
   color: white;
-  font-size: 21px;
+  width: 200px;
   font-weight: bold;
+}
+@media (max-width: 575px) {
+   .mylogo{
+    font-family: monospace;
+    color: white;
+    width: 150px;
+    font-weight: bold;
+   }
 }
