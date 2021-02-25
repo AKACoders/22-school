@@ -4791,12 +4791,35 @@ hr {
 
 .footer-social a:hover {
   color: #fff;
-  background: #ff6d21;
 }
 
 .footer-social a i {
   display: inline-block;
 }
+
+.footer-social a:first-child:hover {
+  background: #4267b2;
+}
+
+.footer-social a:nth-child(2):hover {
+  background: #F70000;
+}
+
+.footer-social a:nth-child(3):hover {
+  background: #0077b5;
+}
+
+.footer-social a:last-child:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
 
 .number a {
   font-family: "DM Sans", sans-serif;
