@@ -3205,11 +3205,7 @@ hr {
   transition: all 0.3s ease-out 0s;
 }
 .header-area .main-header .main-menu ul li:nth-child(3) ul.submenu {
-  position: absolute;
-  width: 203px;
-  background: #ff6d21;
   left: -60px;
-  top: 90%;
 }
 .header-area .main-header .main-menu ul ul.submenu > li {
   margin-left: 7px;
@@ -4786,7 +4782,9 @@ hr {
   margin-right: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+.footer-social a{
+  transition: 0.4s;
+}
 .footer-social a:hover {
   color: #fff;
   background: #ff6d21;
@@ -4804,10 +4802,11 @@ hr {
 }
 
 .footer-social a:nth-child(3):hover {
-  background: #0077b5;
+  background: #34AFDB;
 }
 
 .footer-social a:last-child:hover {
+  
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
