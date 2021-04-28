@@ -6,21 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title> Kalium University | Contact </title>
+    <title> Kalium University | Courses </title>
     <!-- logo -->
     <link rel="icon" href="img/logo_white.png">
-   <!-- bootstrap -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <!-- font-awesome -->
-   <link rel="stylesheet" href="css/font-awesome.css">
-   <!-- fonts -->
-   <link rel="stylesheet" href="fonts/fonts.css">
-   <!-- aos animation -->
-   <link href="css/aos.css" rel="stylesheet">
-   <!-- hover animation -->
-   <link rel="stylesheet" href="css/hover-min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- aos animation -->
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- hover animation -->
+    <link rel="stylesheet" href="css/hover-min.css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/courses.css">
 </head>
 
 <!-- Bakhtiyor Umarov | Front-end Developer -->
@@ -34,7 +34,6 @@
         </a>
     </div>
     <!-- header back animation end -->
-
     <!-- header start -->
     <header class="header" id="header">
         <div class="container">
@@ -51,10 +50,11 @@
                         <a href="about.html" class="header__link">About University</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">News</a>
+                        <a href="news.html" class="header__link">News</a>
                     </li>
-                    <li class="header__item">
-                        <button type="button" class="btn__item btn"><a href="courses.html" class="header__link">Courses
+                    <li class="header__item active">
+                        <button type="button" class="btn__item btn"><a href="courses.html"
+                                class="header__link active">Courses
                                 & Seminars</a></button>
                         <button type="button" class="btn__icon btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="visually-hidden">Toggle Dropdown</span>
@@ -70,81 +70,102 @@
                                     Class</a></li>
                         </ul>
                     </li>
-                    <li class="header__item active">
-                        <a href="#" class="header__link active">Contact</a>
+                    <li class="header__item">
+                        <a href="contact.html" class="header__link">Contact</a>
                     </li>
                 </ul>
             </nav>
+            <div class="header__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="header__info col-md-10 col-lg-6" data-aos="fade-up" data-aos-duration='1000' data-aos-delay="300">
+                            <h1 class="header__title">Courses & Seminars</h1>
+                            <p class="header__txt">Join the courses held by the University Professors, They are free of charge and help the collaboration between students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- header end -->
 
-    <!-- main start -->
     <main class="main" id="main">
-        <!-- header content start -->
-        <section class="header__content">
+        <!-- courses start -->
+        <section class="courses">
             <div class="container">
                 <div class="row">
-                    <div class="header__info col-md-10 col-lg-6" data-aos="fade-up" data-aos-duration='1000' data-aos-delay="300">
-                        <h1 class="header__title">Get in Touch</h1>
-                        <p class="header__txt">We are ready to answer your quesions</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- header content end -->
-        <!-- contact start -->
-        <section class="contact">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="contact__box col-lg-7">
-                        <h2 class="contact__title">
-                            Send a message
-                        </h2>
-                        <p class="contact__subtitle">
-                            Get in touch with the University staff.
-                        </p>
-                        <form class="contact__group">
-                            <input type="text" class="contact__name" placeholder="Name:">
-                            <input type="email" class="contact__email" placeholder="Surname:">
-                            <label for="textarea" class="textarea__label">Message:</label>
-                            <textarea name="" id="contact__textarea" class="contact__textarea" cols="30" rows="5"></textarea>
-                        </form>
-                        <div class="contact_terms">
-                            <div class="contact__rules">
-                                <input type="checkbox" class="checkbox">
-                                <p class="contact__txt">
-                                    I’ve read and accept the <a class="contact__link" href="#"> terms &amp; conditions
-                                    </a> *
-                                </p>
+                    <div class="col-sm-6 courses__box" data-aos="zoom-in" data-aos-duration='2000'>
+                        <a href="technologies.html" class="courses__box-link">
+                            <div class="courses__img-box">
+                                <img src="img/TechnologyBanner.jpg" alt="" class="courses__img">
+                                <div class="courses__hover"><img src="img/logo_white.png" alt="" class="courses__hover-img"></div>
                             </div>
-                            <button type="button" class="contact__btn hvr-rectangle-in"> <a href=""
-                                    class="contact__btn-link"> Send message</a>
-                            </button>
+                        </a>
+                        <div class="courses__info">
+                            <h4 class="courses__title">
+                                Technology & Science
+                            </h4>
+                            <p class="courses__txt">
+                                Teacher Support
+                            </p>
                         </div>
                     </div>
-                    <div class="contact__box col-lg-4" data-aos="zoom-in" data-aos-duration='2000'>
-                        <h2 class="info__title">
-                            General Info
-                        </h2>
-                        <p class="info__subtitle">
-                            We’re at
-                        </p>
-                        <img src="img/info__building.png" alt="" class="info__img">
-                        <address class="info__address">
-                            320 Washington Street Easton,<br>
-                            MA 02357<br>
-                            Telephone: <a href="tel:571 400-1255" class="addresss__link">(571) 400-1255</a><br>
-                            Email: <a href="mailto:hello@kaliumtheme.com"
-                                class="addresss__link">hello@kaliumtheme.com</a><br>
-                        </address>
+                    <div class="col-sm-6 courses__box" data-aos="zoom-in" data-aos-duration='2000'>
+                        <a href="architecture.html" class="courses__box-link">
+                            <div class="courses__img-box">
+                                <img src="img/ArchitectureBanner.jpg" alt="" class="courses__img">
+                                <div class="courses__hover"><img src="img/logo_white.png" alt="" class="courses__hover-img">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="courses__info">
+                            <h4 class="courses__title">
+                                Architecture Class
+                            </h4>
+                            <p class="courses__txt">
+                                Practice Room
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 courses__box" data-aos="zoom-in" data-aos-duration='2000'>
+                        <a href="architecture.html" class="courses__box-link">
+                            <div class="courses__img-box">
+                                <img src="img/politicsBanner.jpg" alt="" class="courses__img">
+                                <div class="courses__hover"><img src="img/logo_white.png" alt="" class="courses__hover-img">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="courses__info">
+                            <h4 class="courses__title">
+                                Political Science
+                            </h4>
+                            <p class="courses__txt">
+                                Team Work
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 courses__box" data-aos="zoom-in" data-aos-duration='2000'>
+                        <a href="architecture.html" class="courses__box-link">
+                            <div class="courses__img-box">
+                                <img src="img/medicineBanner.jpg" alt="" class="courses__img">
+                                <div class="courses__hover"><img src="img/logo_white.png" alt="" class="courses__hover-img">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="courses__info">
+                            <h4 class="courses__title">
+                                Medicine Class
+                            </h4>
+                            <p class="courses__txt">
+                                Life-based Practice
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- contact end -->
+        <!-- courses end -->
     </main>
-    <!-- main end -->
 
     <!-- foooter start -->
     <footer class="footer" id="footer">
@@ -218,6 +239,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
