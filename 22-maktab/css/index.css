@@ -189,6 +189,7 @@ html.lock{
   margin-left: 20px;
   color: #fff;
 }
+
 .header {
   position: absolute;
   display: flex;
@@ -778,6 +779,9 @@ button.accordion-button.collapsed {
   li {
     margin-left: 0;
     margin-top: 25px;
+  }
+  .top-bar{
+    display: none;
   }
   .header__list {
     width: 50%;
