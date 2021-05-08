@@ -238,15 +238,16 @@ html.lock{
 }
 
 .header__link {
+  position: relative;
   color: #ffffff;
   font-size: 19px;
   line-height: 32px;
   font-family: "Open Sans";
 }
 
-.fixed .header__link {
+/* .fixed .header__link {
   color: #000000;
-}
+} */
 
 .header__item.active::after {
   display: block;
@@ -276,7 +277,7 @@ html.lock{
 }
 
 .dropdown-menu.show {
-  transform: translate(0, 100px) !important;
+  transform: translate(0, 40px) !important;
 }
 
 .drop__down-menu {
