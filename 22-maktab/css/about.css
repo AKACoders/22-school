@@ -121,7 +121,7 @@ html.lock {
 
 .header {
   position: relative;
-  background: url(../img/about__university.jpg) center center/cover no-repeat;
+  background: url('../img/about__university.jpeg') center center/cover no-repeat;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -506,6 +506,7 @@ button.accordion-button.collapsed {
 
 .social__media .fab:hover {
   background: #363130;
+  color: #8a1b1b;
 }
 
 .footer__hero {

@@ -259,7 +259,125 @@ html.lock {
 .architecture__banner-box img {
   border-radius: 10px;
 }
+.cards {
+  padding: 130px 0;
+}
 
+.cards .row:nth-of-type(2) {
+  margin-top: 110px;
+}
+
+.card__box {
+  margin-top: 20px;
+}
+
+.cards .row:nth-of-type(2) .card__desc {
+  font-size: 26px;
+  border-bottom: 1px solid #a8a8a8;
+  padding: 0 0 10px;
+}
+
+.cards .row:nth-of-type(2) .card__body {
+  text-align: left;
+}
+.cards .row:nth-of-type(2) .card__others{
+  font-size: 16px;
+  font-weight: 500;
+}
+.cards .row:nth-of-type(2) .card__img {
+  height: auto;
+}
+.news{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__title {
+  font-size: 40px;
+}
+.card__others{
+  color: #5142d6;
+  font-size: 19px;
+  font-weight: 700;
+}
+.card__others:hover{
+  color: #8a1b1b;
+}
+.card__subtitle {
+  color: #525252;
+}
+
+.card__box:hover {
+  cursor: pointer;
+}
+
+.card__cover {
+  transition: 0.5s;
+}
+
+.card__cover:hover {
+  box-shadow: 0px 0px 30px -8px black;
+}
+
+.card__cover:hover .hover__img {
+  opacity: 0.8;
+}
+
+.card__header {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card__img {
+  height: 240px;
+}
+
+.hover__img {
+  position: absolute;
+  background: #8a1b1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hover__img img {
+  width: 80px;
+  height: 80px;
+}
+
+.card__body {
+  padding: 20px;
+  border-right: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  border-left: 1px solid #cfcfcf;
+}
+
+.card__date {
+  position: relative;
+  bottom: 34px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #b92b2b;
+  color: #ffffff;
+  padding: 2px 6px;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  letter-spacing: 1px;
+}
+
+.card__desc:hover {
+  color: #8a1b1b;
+}
 .info__txt,
 .info__subtitle {
   margin: 20px 0;
