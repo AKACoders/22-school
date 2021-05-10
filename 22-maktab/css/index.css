@@ -196,8 +196,13 @@ html.lock{
   flex-direction: column;
   width: 100%;
   z-index: 99;
+  transition: .6s;
 }
-
+.header.sticky{
+  background-color: #8A251B;
+  position: fixed;
+  top: 0;
+}
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -278,6 +283,8 @@ html.lock{
 
 .dropdown-menu.show {
   transform: translate(0, 40px) !important;
+  position: absolute;
+  left: 10px;
 }
 
 .drop__down-menu {
@@ -420,23 +427,37 @@ html.lock{
 }
 
 .cards .row:nth-of-type(2) .card__desc {
-  font-size: 22px;
+  font-size: 26px;
   border-bottom: 1px solid #a8a8a8;
   padding: 0 0 10px;
 }
 
 .cards .row:nth-of-type(2) .card__body {
-  text-align: center;
+  text-align: left;
 }
-
+.cards .row:nth-of-type(2) .card__others{
+  font-size: 16px;
+  font-weight: 500;
+}
 .cards .row:nth-of-type(2) .card__img {
   height: auto;
 }
-
+.news{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .card__title {
   font-size: 40px;
 }
-
+.card__others{
+  color: #5142d6;
+  font-size: 19px;
+  font-weight: 700;
+}
+.card__others:hover{
+  color: #8a1b1b;
+}
 .card__subtitle {
   color: #525252;
 }
@@ -574,16 +595,17 @@ html.lock{
   background: url(../img/schoolgirl.png) no-repeat 800px -24px;
 }
 
-.panel__info {
-  width: 60%;
-}
 
 .panel__title {
   font-size: 40px;
 }
-
+.school__img{
+  width: 1116px;
+  height: 500px;
+}
 .panel__subtitle {
   margin: 0px 0px 65px;
+  font-size: 18px;
 }
 
 .panel__boxes {
@@ -690,6 +712,7 @@ button.accordion-button.collapsed {
 
 .social__media .fab:hover {
   background: #363130;
+  color: #8a1b1b;
 }
 
 .footer__hero {
@@ -1019,6 +1042,12 @@ button.accordion-button.collapsed {
   .subs__title {
     margin-top: 15px;
   }
+  .news{
+    display: block;
+  }
+  .card__others{
+    font-size: 16px;
+  }
   .panels {
     background: url(../img/schoolgirl.png) no-repeat 147px -24px;
   }
@@ -1054,6 +1083,12 @@ button.accordion-button.collapsed {
   }
   .cards {
     padding: 70px 0 50px;
+  }
+  .news{
+    display: block;
+  }
+  .card__others{
+    font-size: 15px;
   }
   .subs__subtitle {
     font-size: 25px;
@@ -1099,6 +1134,12 @@ button.accordion-button.collapsed {
   .subs__title {
     font-size: 28px;
   }
+  .news{
+    display: block;
+  }
+  .card__others{
+    font-size: 15px;
+  }
   .card__title,
   .panel__title {
     font-size: 30px;
@@ -1137,9 +1178,15 @@ button.accordion-button.collapsed {
   .subs__title {
     font-size: 28px;
   }
+  .news{
+    display: block;
+  }
   .card__title,
   .panel__title {
     font-size: 26px;
+  }
+  .card__others{
+    font-size: 14px;
   }
   .accordion-item {
     width: 298px;
