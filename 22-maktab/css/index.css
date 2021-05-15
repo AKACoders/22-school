@@ -90,7 +90,7 @@ html.lock{
 }
 
 .loader__in {
-  position: absolte;
+  position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -536,7 +536,7 @@ html.lock{
   color: #8a1b1b;
 }
 
-.subscribtion {
+.subscription {
   padding: 160px 0;
   text-align: center;
   background: #111111;
