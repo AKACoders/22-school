@@ -21,12 +21,6 @@
     <link rel="stylesheet" href="css/hover-min.css">
     <!-- main css -->
     <link rel="stylesheet" href="css/index.css">
-    <!-- pace js -->
-    <script src="js/pace.js"></script>
-    <!-- jquery bez -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/lib/jquery.bez.min.js"></script>
-    <!-- TweenMax js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -38,25 +32,26 @@
         </a>
     </div>
     <!-- header back animation end -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="top-bar py-1">
-                <p style="margin: 0;padding: 0;"><i class="fas fa-map-marker-alt"></i> sh. Samarqand, Bulung'ur tumani, k. Sayilgoh, 32</p>
-                <p style="margin: 0;padding: 0;">
-                    <a href="userid@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                        maktab22@gmail.com
-                    </a>
-                    <a href="tel:+99866-442-2474">
-                        <i class="fas fa-phone-volume"></i>
-                        +998 (66) 442-24-74
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
+    
     <!-- header start -->
     <header class="header" id="header">
+        <div class="container-fluid topBar-removed">
+            <div class="row">
+                <div class="top-bar py-1" id="top-bar">
+                    <p style="margin: 0;padding: 0;"><i class="fas fa-map-marker-alt"></i> sh. Samarqand, Bulung'ur tumani, k. Sayilgoh, 32</p>
+                    <p style="margin: 0;padding: 0;">
+                        <a href="userid@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            maktab22@gmail.com
+                        </a>
+                        <a href="tel:+99866-442-2474">
+                            <i class="fas fa-phone-volume"></i>
+                            +998 (66) 442-24-74
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <nav class="header__nav">
                 <a href="#" class="header__logo"><img src="img/logo_white.png" alt="" class="header__logo-img"></a>
@@ -557,38 +552,17 @@
    <script src=" https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
    <!-- jquery js -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- pace js -->
+   <script src="js/pace.js"></script>
+   <!-- jquery bez -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/lib/jquery.bez.min.js"></script>
+   <!-- TweenMax js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+   <!-- extra name-->
+   <script src="js/extra.js"></script>
    
 
     <script type="text/javascript">
-        paceOptions = {
-                    ajax: true,
-                    document: true,
-                    eventLag: false
-        };
-        Pace.on('done', function(){
-            $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19, 1, 0.22, 1]));
-
-            $(".loader").delay(1500).animate({top: '-1000'}, 2000, $.bez([0.19, 1, 0.22, 1]));
-
-            TweenMax.from(".title", 2, {
-                    delay: 1.8,
-                    y: 10,
-                    opacity: 0,
-                    ease: Expo.easeInOut
-            });
-        });
-
-        var height = $('#header').height(); 
-
-        $(window).on("scroll", function(){
-            if($(window).scrollTop()){
-                $('header').addClass('sticky');
-            }
-            else{
-                $('header').removeClass('sticky');
-            }
-        })
-
         AOS.init();
     </script>
 </body>

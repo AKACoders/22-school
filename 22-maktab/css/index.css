@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  scroll-behavior: smooth !important;
+}
+
+body.lock,
+html.lock{
+  overflow-y: hidden !important;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -51,19 +64,6 @@ button {
   color: #ffffff;
 }
 
-body,
-html {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-  overflow: hidden;
-  scroll-behavior: smooth !important;
-}
-
-body.lock,
-html.lock{
-  overflow-y: hidden !important;
-}
 
 .loader {
   flex-direction: column;
@@ -80,7 +80,7 @@ html.lock{
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 .pace{
-  pointer-events: none;
+  pointer-events: none; 
   user-select: none;
   z-index: 10000;
   position: fixed;
@@ -191,7 +191,11 @@ html.lock{
   background: #8A251B;
   color: #ffffff;
   font-family: 'Courier New', Courier, monospace;
+
 }
+
+
+
 .top-bar a {
   margin-left: 20px;
   color: #fff;
@@ -203,15 +207,18 @@ html.lock{
   flex-direction: column;
   width: 100%;
   z-index: 99;
-  margin-top: 10px;
   transition: .6s;
 }
 .header.sticky{
-  background-color: #8A251B;
+  background: #161616;
   position: fixed;
   margin-top: 0;
   top: 0;
+  transform: translateY(-35px);
+
 } 
+
+
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -219,7 +226,9 @@ html.lock{
   padding: 5px 0;
   position: relative;
   z-index: 100;
+  padding: 15px 0;
 }
+
 
 .header__nav.fixed {
   position: relative;
@@ -544,7 +553,7 @@ html.lock{
 }
 
 .subscribtion {
-  padding: 160px 0;
+  padding: 120px 0;
   text-align: center;
   background: #111111;
   border-top: 5px solid #8a1b1b;
@@ -600,8 +609,7 @@ html.lock{
 }
 
 .panels {
-  padding: 100px 0;
-  background: url(../img/schoolgirl.png) no-repeat 800px -24px;
+  padding: 80px 0 30px 0;
 }
 
 
@@ -614,8 +622,7 @@ html.lock{
   height: 500px;
 }
 .panel__subtitle {
-  margin: 0px 0px 65px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .panel__boxes {
@@ -749,16 +756,16 @@ button.accordion-button.collapsed {
 }
 
 @media (max-width: 1336px) {
-  .panels {
-    padding: 100px 0;
-    background: url(../img/schoolgirl.png) no-repeat 600px -24px;
+  .school__img{
+    width: 750px;
+    height: 340px;
+  }
+  .panel__subtitle {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 1140px) {
-  .panels {
-    background: url(../img/schoolgirl.png) no-repeat 505px -24px;
-  }
   .accordion-item {
     background: #ffffff;
   }
@@ -862,8 +869,12 @@ button.accordion-button.collapsed {
     border-radius: 5px;
     transition: 0.3s;
   }
+  
   .header__item .btn{
     margin-left: -12px;
+  }
+  .header.sticky{
+    transform: translateY(0);
   }
   .header__icon.fixed {
     background: #000000;
@@ -940,15 +951,14 @@ button.accordion-button.collapsed {
     letter-spacing: 1px;
     font-size: 22px;
   }
+  .panel__subtitle {
+    font-size: 19px;
+  }
   .subs__title {
     font-size: 55px;
   }
   .subs__txt {
     padding: 0px 50px;
-  }
-  .panels {
-    background: url(../img/schoolgirl.png) no-repeat 260px -24px;
-    position: relative;
   }
   .info {
     padding: 120px 0;
@@ -973,6 +983,10 @@ button.accordion-button.collapsed {
   .header__btn {
     margin-top: 7px;
   }
+  
+  .school__img{
+    height: 340px;
+  }
 }
 
 @media (max-width: 684px) {
@@ -980,7 +994,7 @@ button.accordion-button.collapsed {
     max-width: 630px;
   }
   .header__nav {
-    padding: 30px 0;
+    padding: 15px 0;
   }
   .header__title {
     line-height: 54px;
@@ -1006,14 +1020,9 @@ button.accordion-button.collapsed {
     position: relative;
     z-index: 3;
   }
-  .panels::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    height: 100%;
-    width: 100%;
-    background: #ffffff63;
+
+  .school__img{
+    height: 330px;
   }
   .info__numbers {
     font-size: 30px;
@@ -1029,6 +1038,12 @@ button.accordion-button.collapsed {
 @media (max-width: 667px) {
   .accordion-item {
     width: 285px;
+  }
+  .school__img{
+    height: 300px;
+  }
+  .panel__subtitle {
+    font-size: 17px;
   }
 }
 
@@ -1052,22 +1067,19 @@ button.accordion-button.collapsed {
   .subs__title {
     margin-top: 15px;
   }
+  .school__img{
+    height: 270px;
+  }
   .news{
     display: block;
   }
   .card__others{
     font-size: 16px;
   }
-  .panels {
-    background: url(../img/schoolgirl.png) no-repeat 147px -24px;
-  }
-  .panels::after {
-    background: #ffffff99;
-  }
   .panel__info {
-    width: 90%;
+    width: 100%;
   }
-
+  
   .info__box {
     margin-bottom: 60px;
   }
@@ -1107,9 +1119,6 @@ button.accordion-button.collapsed {
   .subs__title {
     font-size: 36px;
   }
-  .panels {
-    background: url(../img/schoolgirl.png) no-repeat -10px -20px;
-  }
   .panel__info {
     width: unset;
   }
@@ -1119,7 +1128,12 @@ button.accordion-button.collapsed {
   .panel__boxes .panel__box:nth-of-type(1) {
     margin-bottom: 20px;
   }
-
+  .school__img{
+    height: 230px;
+  }
+  .panel__subtitle {
+    font-size: 15px;
+  }
   .footer__box:last-child {
     margin-bottom: 0;
   }
@@ -1161,7 +1175,9 @@ button.accordion-button.collapsed {
   .accordion-item {
     width: 325px;
   }
-
+  .school__img{
+    height: 200px;
+  }
   .footer__media {
     padding: 50px 50px;
     line-height: 36px;
@@ -1197,6 +1213,9 @@ button.accordion-button.collapsed {
   }
   .card__others{
     font-size: 14px;
+  }
+  .school__img{
+    height: 200px;
   }
   .accordion-item {
     width: 298px;
