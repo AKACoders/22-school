@@ -612,7 +612,9 @@ button {
   padding: 80px 0 30px 0;
 }
 
-
+.panel__subtitle {
+  font-size: 21px;
+}
 .panel__title {
   font-size: 40px;
   color: #8a1b1b;
@@ -621,10 +623,6 @@ button {
   width: 1366px;
   height: 500px;
 }
-.panel__subtitle {
-  font-size: 15px;
-}
-
 .panel__boxes {
   width: 50%;
   display: flex;
@@ -757,11 +755,11 @@ button.accordion-button.collapsed {
 
 @media (max-width: 1336px) {
   .school__img{
-    width: 750px;
+    width: 1330px;
     height: 340px;
   }
   .panel__subtitle {
-    font-size: 20px;
+    font-size: 23px;
   }
 }
 
@@ -809,7 +807,11 @@ button.accordion-button.collapsed {
     margin-left: -10px;
   }
 }
-
+@media (max-width: 797px){
+  .top-bar{
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   body.after::after,
   html.after::after {
@@ -1043,7 +1045,7 @@ button.accordion-button.collapsed {
     height: 300px;
   }
   .panel__subtitle {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -1132,7 +1134,7 @@ button.accordion-button.collapsed {
     height: 230px;
   }
   .panel__subtitle {
-    font-size: 15px;
+    font-size: 17px;
   }
   .footer__box:last-child {
     margin-bottom: 0;
