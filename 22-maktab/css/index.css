@@ -791,7 +791,6 @@ button.accordion-button.collapsed {
     position: relative;
     z-index: -1;
   }
-
   .info__box {
     margin-bottom: 30px;
   }
@@ -806,10 +805,14 @@ button.accordion-button.collapsed {
   .dropdown-menu{
     margin-left: -10px;
   }
+  
 }
-@media (max-width: 797px){
+@media (max-width: 815px){
   .top-bar{
     display: none;
+  }
+  .header.sticky{
+    transform: translateY(0px);
   }
 }
 @media (max-width: 768px) {

@@ -207,7 +207,7 @@ html.lock {
   width: 100%;
 }
 
-.header__item:nth-of-type(4) {
+.header__item {
   position: relative;
 }
 
