@@ -696,6 +696,12 @@ button.accordion-button.collapsed {
 .footer__desc {
   color: #b8b8b8;
   margin: 10px 0 0;
+  line-height: 20px;
+  transition: .2s;
+}
+.footer__desc:hover {
+  cursor: pointer;
+  color: #ffffff;
 }
 
 .footer__img {
