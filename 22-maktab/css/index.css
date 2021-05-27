@@ -265,7 +265,7 @@ button {
   color: #ffffff;
   font-size: 19px;
   line-height: 32px;
-  font-family: "Open Sans";
+  font-family: 'Playfair Display';
 }
 
 /* .fixed .header__link {
@@ -298,13 +298,14 @@ button {
 .btn:focus {
   box-shadow: none;
 }
-
+.dropdown-menu{
+  min-width: 12rem;
+}
 .dropdown-menu.show {
-  transform: translate(0, 40px) !important;
+  transform: translate(-0, 40px) !important;
   position: absolute;
   left: 10px;
 }
-
 .drop__down-menu {
   position: absolute;
   left: -15px;
@@ -800,7 +801,15 @@ button.accordion-button.collapsed {
   .info__box {
     margin-bottom: 30px;
   }
-
+  .dropdown-menu {
+    min-width: 9rem;
+  }
+  .drop__down-item{
+    padding: 2px 5px;
+    margin: 5px;
+    font-size: 15px;
+    line-height: 15px;
+  }
   .footer__box {
     margin-bottom: 60px;
   }
@@ -1132,13 +1141,7 @@ button.accordion-button.collapsed {
   }
   .panel__info {
     width: unset;
-  }
-  .panel__boxes {
-    flex-direction: column;
-  }
-  .panel__boxes .panel__box:nth-of-type(1) {
-    margin-bottom: 20px;
-  }
+  } 
   .school__img{
     height: 230px;
   }
